@@ -6,3 +6,5 @@ This is the code for 'Infinite density and relaxation for L´evy walks in an ext
 'infinite_distribution.m' is the code to calculate the infinite density for LW under constant force field.
 
 'MSD_qth_mmt.m' is the code to calculate the mean squared displacement and the q-th moment.
+
+'PowerDensity.m' is to generate random variable of power-law distribution.
