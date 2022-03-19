@@ -36,7 +36,7 @@ for ln_t = ln_ta:ln_d:ln_tb
         i        
         %F0 w 
         %[k,MM]=levy_walk_HP(x0, v0, w, t, alpha);        
-        [k,MM] = levy_walk_HP_2(x0, v0, F0, t, alpha);
+        [k,MM] = levy_walk_F0(x0, v0, F0, t, alpha);
         x = MM(2, k + 1);
         X(1, i) = x;
     end
@@ -64,9 +64,6 @@ for ln_t = ln_ta:ln_d:ln_tb
     
 end
 
-H = v0^2/w^2 - W;
-
-sigma = W - Av.^2;
 
 hold on;
 loglog(V, Mq, '*');
